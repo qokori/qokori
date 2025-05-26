@@ -1,10 +1,8 @@
-- 👋 Hi, I’m @qokori
-- 👀 I’m interested in full stack and blender (★ ω ★)
-- 🌱 I’m currently learning JS
-- 💞️ I’m looking to collaborate on a website
-- 📫 How to reach me any social media - qokori
-- 😄 Pronouns: he/him
-- ⚡ Fun fact: your anus can fit up to 5 racoons
+fuck vibe coding
+fuck armenians
+fuck uzbeks
+fuck tadjiks
+fuck any nations except russian
 
 <!---
 qokori/qokori is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
