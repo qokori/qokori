@@ -4,7 +4,7 @@ Hi 👋 My name is qokori
 I'm Alabuga Polytech student and I learn full-stack development for a couple of months for now
 
 * 🌍  I'm based in SEZ Alabuga
-* ✉️  You can contact me at [equda.979@gmail.com](mailto:equda.979@gmail.com)
+* ✉️  You can contact me at [telegram](https://t.me/qokori)
 * 🧠  I'm learning python
 * 🤝  I'm open to collaborating on any interesting projects
 
