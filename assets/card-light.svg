@@ -1,11 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="652" height="194" viewBox="0 0 652 194" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="626" height="122" viewBox="0 0 626 122" role="img">
 <title>qokori</title>
 <style>text{font-family:ui-monospace, 'JetBrains Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;font-size:14px;white-space:pre}.cursor{animation:blink 1.1s steps(1) infinite}@keyframes blink{50%{opacity:0}}</style>
 <text x="2" y="22" fill="#1f2328" font-weight="600" font-size="18">qokori</text>
-<text x="2" y="54" xml:space="preserve"><tspan fill="#1f2328">dotfiles          </tspan><tspan fill="#656d76">My old Hyprland rice</tspan></text>
-<text x="2" y="78" xml:space="preserve"><tspan fill="#1f2328">claude-stats      </tspan><tspan fill="#656d76">Claude plan limits and token usage in the GNOME top bar</tspan></text>
-<text x="2" y="102" xml:space="preserve"><tspan fill="#1f2328">mvp-max           </tspan><tspan fill="#656d76">WS</tspan></text>
-<text x="2" y="126" xml:space="preserve"><tspan fill="#1f2328">task-tracker-ws   </tspan><tspan fill="#656d76">abu</tspan></text>
-<text x="2" y="150" xml:space="preserve"><tspan fill="#1f2328">cryptobrains      </tspan><tspan fill="#656d76"></tspan></text>
-<rect class="cursor" x="2" y="162" width="8" height="16" fill="#1f2328"/>
+<text x="2" y="54" xml:space="preserve"><tspan fill="#1f2328">dotfiles       </tspan><tspan fill="#656d76">My old Hyprland rice</tspan></text>
+<text x="2" y="78" xml:space="preserve"><tspan fill="#1f2328">claude-stats   </tspan><tspan fill="#656d76">Claude plan limits and token usage in the GNOME top bar</tspan></text>
+<rect class="cursor" x="2" y="90" width="8" height="16" fill="#1f2328"/>
 </svg>

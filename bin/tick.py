@@ -20,6 +20,7 @@ import render
 ROOT = Path(__file__).resolve().parent.parent
 USER = 'qokori'
 MAX_REPOS = 6
+HIDDEN = {USER, 'mvp-max', 'task-tracker-ws', 'cryptobrains'}  # never on the card
 USAGE_HELPER = (Path.home() / '.local/share/gnome-shell/extensions/'
                 'claude-usage@neorcage/usage_helper.py')
 STATUS_TTL = timedelta(days=7)
@@ -65,7 +66,7 @@ def update_status(dry_run):
 def public_repos():
     repos = json.loads(run('gh', 'api', f'users/{USER}/repos?sort=pushed&per_page=100'))
     return [(r['name'], r['description'] or '') for r in repos
-            if not r['fork'] and r['name'] != USER][:MAX_REPOS]
+            if not r['fork'] and r['name'] not in HIDDEN][:MAX_REPOS]
 
 
 def update_card(dry_run):
