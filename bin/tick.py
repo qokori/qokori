@@ -4,7 +4,8 @@
 - status: Claude Code output tokens for the current week, expires in 7 days
   so it disappears on its own if this machine stays off;
 - card: the list of public repos, committed as an address that isn't linked
-  to the account, so the updates don't show up on the contribution graph.
+  to the account, so the updates don't show up on the contribution graph;
+- pulse: the heart-monitor line on the contribution graph, see pulse.py.
 
 --dry-run prints the status and renders the card into a temp dir instead.
 """
@@ -15,6 +16,7 @@ import tempfile
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+import pulse
 import render
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -94,7 +96,7 @@ def update_card(dry_run):
 def main():
     dry_run = '--dry-run' in sys.argv[1:]
     failed = False
-    for step in (update_status, update_card):
+    for step in (update_status, update_card, pulse.sync):
         try:
             step(dry_run)
         except Exception as e:
