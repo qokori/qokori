@@ -15,6 +15,7 @@ THEMES = {
 FONT = ("ui-monospace, 'JetBrains Mono', SFMono-Regular, Menlo, Consolas, "
         "'Liberation Mono', monospace")
 SIZE, LINE, CHAR = 14, 24, 8.6  # font size, line height, approx. glyph width
+MAX_DESC = 60
 
 
 def render(title, repos, theme):
@@ -47,12 +48,13 @@ def render(title, repos, theme):
     return '\n'.join(out) + '\n'
 
 
-def main(args):
-    repos = [tuple(arg.split('=', 1)) for arg in args]
-    (ROOT / 'assets').mkdir(exist_ok=True)
+def write_cards(repos, out=ROOT / 'assets'):
+    repos = [(name, desc if len(desc) <= MAX_DESC else desc[:MAX_DESC - 1] + '…')
+             for name, desc in repos]
+    out.mkdir(exist_ok=True)
     for name, theme in THEMES.items():
-        (ROOT / 'assets' / f'card-{name}.svg').write_text(render('qokori', repos, theme))
+        (out / f'card-{name}.svg').write_text(render('qokori', repos, theme))
 
 
 if __name__ == '__main__':
-    main(sys.argv[1:])
+    write_cards([tuple(arg.split('=', 1)) for arg in sys.argv[1:]])

@@ -1,0 +1,7 @@
+[Unit]
+Description=Update the qokori GitHub profile
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 %h/code/qokori/bin/tick.py
